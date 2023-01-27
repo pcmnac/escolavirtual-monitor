@@ -16,9 +16,6 @@ service: escola-virtual-monitor
 #app: your-app-name
 #org: your-org-name
 
-# You can pin your service to only deploy with a specific Serverless version
-# Check out our docs for more details
-frameworkVersion: "2"
 
 useDotenv: true
 
@@ -26,7 +23,6 @@ provider:
   name: aws
   region: eu-west-1
   runtime: nodejs12.x
-  lambdaHashingVersion: 20201221
   stage: dev
 
   # you can add statements to the Lambda function's IAM Role here
